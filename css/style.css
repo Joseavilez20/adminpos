@@ -1,0 +1,108 @@
+body {margin:0;
+height: auto; 
+min-height: 100%;
+}
+
+
+
+header nav ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav ul.topnav li {float: left;}
+
+header nav ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+header nav ul.topnav li a.active {background-color: #4CAF50;}
+
+header nav ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  header nav ul.topnav li.right, 
+  header nav ul.topnav li {float: none;}
+}
+
+aside ul.sidenav {
+  list-style-type: none;
+  /*margin: 0;*/
+  padding: 0;
+  width: 230px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  -webkit-transition: width 0.7s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.7s;
+}
+
+aside ul.sidenav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+aside ul.sidenav li a.active {
+  background-color: black;
+  color: white;
+}
+
+aside ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+
+	background-color:#1abc9c;
+  margin-left: auto;
+  min-height: 901px;
+
+
+  margin-top:30px; /*posible temp*/
+  /*padding: 1px 16px;*/
+  padding:20px;
+  /*height: 1000px;*/
+}
+ 
+
+
+@media screen and (max-width: 768px) {
+  aside ul.sidenav {
+    width: 0%;
+    
+
+    /*height: auto;*/
+    /*position: relative;*/
+  }
+  
+  aside ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 600px) {
+  aside ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
